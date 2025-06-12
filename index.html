@@ -10,6 +10,7 @@
   <header>
     <h1>How Codex Can Help Selladore Inc</h1>
     <p class="tagline">Bringing software development in-house with AI-driven assistance</p>
+    <button id="theme-toggle" aria-label="Toggle dark mode">Toggle Theme</button>
   </header>
 
   <section>
@@ -41,5 +42,12 @@
   <footer>
     <p>&copy; 2023 Selladore Inc. Powered by Codex.</p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
